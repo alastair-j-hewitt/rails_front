@@ -1,0 +1,11 @@
+{
+  "name": "rails-frontend",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "4.2.2",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.1"
+  }
+}

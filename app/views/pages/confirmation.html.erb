@@ -1,0 +1,13 @@
+<h1>Home#confirmation</h1>
+<p>Your total is: Validated Amount From Scan.  Confirm purchase?</p>
+<button type="button" class="btn btn-primary" id="primary">Sim</button>
+<button type="button" class="btn btn-danger">Não</button>
+
+<script type="text/javascript">
+	const button = document.getElementById('primary');
+
+button.addEventListener('click', event => {
+  window.location.href = "pin";
+});
+</script>
+<p>Find me in app/views/home/confirmation.html.erb</p>
