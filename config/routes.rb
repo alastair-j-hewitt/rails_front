@@ -5,10 +5,11 @@ Rails.application.routes.draw do
   get 'confirmation', to: 'pages#confirmation', as: :confirmation
   get 'pin', to: 'pages#pin', as: :pin
   get 'summary', to: 'pages#summary', as: :summary
+  # get "pages/:id", to: "pages#show"
 
   root to: 'pages#home'
 
   #root to: 'articles#index'
-  resources :articles, except: :index
+  resources :pages, except: :index
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

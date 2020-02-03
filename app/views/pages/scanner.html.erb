@@ -20,6 +20,8 @@
         	window.location.href = 'confirmation';
             //alert('Escaneou o conteudo: ' + content);
             // window.open(content, "_blank");
+
+            document.write('Escaneou o conteudo: ' + content);
             
         });
         Instascan.Camera.getCameras().then(cameras => 
