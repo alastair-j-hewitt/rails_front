@@ -17,12 +17,21 @@
             }
         );
         scanner.addListener('scan', function(content) {
-        	window.location.href = 'confirmation';
+        	//
             //alert('Escaneou o conteudo: ' + content);
-            // window.open(content, "_blank");
+           //window.open(content, 'confirmation');
 
-            document.write('Escaneou o conteudo: ' + content);
-            
+           //new_window = window.location.href = 'confirmation';
+
+            // new_window.onload() => {
+            //     return document.write('Escaneou o conteudo: ' + content);
+            // }
+
+            // how to make doc.write content globally available?
+            // how to make it available in confirmation page?
+
+           return document.write('Escaneou o conteudo: ' + content);
+
         });
         Instascan.Camera.getCameras().then(cameras => 
         {
@@ -32,7 +41,10 @@
                 console.error("Não existe câmera no dispositivo!");
             }
         });
+
+
     </script>
+
 
  </body>
 </html>
